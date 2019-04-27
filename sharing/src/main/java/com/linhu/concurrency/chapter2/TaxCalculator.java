@@ -6,12 +6,14 @@ public class TaxCalculator {
 
     private final double bonus;
 
+    private CalculatorStrategy calculatorStrategy;
+
     public TaxCalculator(double salary,double bonus) {
         this.salary = salary;
         this.bonus = bonus;
     }
     protected double calcTax(){
-        return 0.0d;
+        return calculatorStrategy.calculate(this.salary,this.bonus);
     }
 
     public double calcuate(){
