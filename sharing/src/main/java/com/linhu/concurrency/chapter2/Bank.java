@@ -11,5 +11,6 @@ public class Bank {
         TicketWindow ticketWindow3 = new TicketWindow("窗口3");
         Thread t3 = new Thread(ticketWindow3);
         t3.start();
+        //there is nothong;
     }
 }
