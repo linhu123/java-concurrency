@@ -1,0 +1,17 @@
+Monitorenter
+每个对象都与一个moniter相关联，一个moniter的lock的锁只能被一个线程在同一时刻获得，
+在一个线程尝试获得与对象关联moniter的所有权时会发生如下几件事：
+    如果moniter的计数器为0，则意味着该moniter的lock还没有被获取，每个线程获得之后将
+    立即对该计数器加一。从此该线程就是这个moniter的所有者。
+
+    如果一个已经该moniter所有权的线程重入，则会导致moniter计数器再次累加。
+
+    如果moniter已经被其他线程拥有，则其他线程尝试获取该moniter的所有权时，会被陷入阻塞状态直到
+    moniter计数器变为0，才能再次获取对moniter的所有权。
+
+
+Monitorexit
+    释放对moniter的所有权，想要释放对某个对象关联的moniter的所有权的前提是，你曾经获得了所有权。
+    释放moniter所有权的过程比较简单，就是将moniter的计数器减一，如果计数器的结过为0，那就意味着
+    该线程不在拥有对该moniter的所有权，通俗的讲就是解锁。与此同时被该moniter block 的线程将再次
+    尝试获得对该moniter的所有权。
