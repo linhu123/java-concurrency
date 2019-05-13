@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e99886a-0727-43de-a28a-ca578d2cd3e2" name="Default" comment="moniter学习">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing/src/main/java/com/linhu/concurrency/chapter8/DenyPolicy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing/src/main/java/com/linhu/concurrency/chapter8/RunnableQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing/src/main/java/com/linhu/concurrency/chapter8/ThreadFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing/src/main/java/com/linhu/concurrency/chapter8/ThreadPool.java" />
+    <list default="true" id="8e99886a-0727-43de-a28a-ca578d2cd3e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -123,7 +119,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="93" />
     <option name="y" value="42" />
     <option name="width" value="1346" />
@@ -539,7 +535,7 @@
       <workItem from="1556636284191" duration="1718000" />
       <workItem from="1556895288109" duration="4968000" />
       <workItem from="1557411216328" duration="56000" />
-      <workItem from="1557671667242" duration="1581000" />
+      <workItem from="1557671667242" duration="1636000" />
     </task>
     <task id="LOCAL-00001" summary="策略模式">
       <created>1556355704612</created>
@@ -555,14 +551,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556965005438</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add thapter8">
+      <created>1557706785486</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557706785486</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21949000" />
+    <option name="totallyTimeSpent" value="22004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -629,7 +632,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="策略模式" />
     <MESSAGE value="moniter学习" />
-    <option name="LAST_COMMIT_MESSAGE" value="moniter学习" />
+    <MESSAGE value="add thapter8" />
+    <option name="LAST_COMMIT_MESSAGE" value="add thapter8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

@@ -1,0 +1,8 @@
+你会发现yield 和 sleep 有一些混淆的地方，在jdk1.5以前的版本中yield的方法事实上是调用了
+sleep(0),但是他们存在本质的区别
+sleep 会导致当前线程暂停指定的时间，没有cpu时间片的消耗。
+yield 只会对CPU调度器的一个提示，如果CPU调度器没有忽略这个提示，他会导致线程上下文的切换。
+sleep 会是线程短暂的block，会在给定的时间内释放CPU资源。
+yeild 会使RUNNING状态的Thread进入RUNNABLE状态（如果CPU没有忽略这个提示）
+sleep 一定会完成给定时间的休眠，而yeild的提示并不能一定担保
+一个线程sleep另一个线程调用interrupt 会捕捉到中断信号，而yield则不会。
